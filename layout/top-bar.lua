@@ -54,7 +54,7 @@ local TopBar = function(s, offset)
     local system_details = wibox.widget {
             systray,
             separator,
-            battery,
+            --battery_widget,
             --separator,
             wibox.widget{
                 wibox.widget{

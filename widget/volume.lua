@@ -15,10 +15,12 @@ volume_widget.font = beautiful.font
 local volume
 
 function update_volume()
-    awful.spawn.easy_async_with_shell("bash -c 'amixer -D pulse sget Master'", function(stdout)
-        volume = string.match(stdout, '(%d?%d?%d)%%')
+    awful.spawn.easy_async_with_shell("pamixer --get-volume", function(stdout)
+        volume = stdout
+        --volume = string.match(stdout, '(%d?%d?%d)%%')
         awful.spawn.easy_async_with_shell("bash -c 'pacmd list-sinks | awk '/muted/ { print $2 }''", function(muted)
             muted = string.gsub(muted, "%s+", "")
+	        --muted = 'no'
             if muted == 'muted:no' and (volume > '50' or volume == '100') then
                 volume_icon.text = '墳'
             elseif muted == 'muted:no' and volume <= '50' and volume > '0' then

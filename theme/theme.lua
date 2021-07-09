@@ -13,10 +13,10 @@ local awesome_overrides = function(theme)
     theme.dir = os.getenv('HOME') .. '/.config/awesome/theme'
 
     theme.icons = theme.dir .. '/.config/awesome/theme/icons/'
-    theme.font = 'Product Sans Regular 9'         -- Glyphs don't work properly with this (#442)
+    theme.font = 'Google Sans Regular 9'         -- Glyphs don't work properly with this (#442)
     --theme.font = 'Robotomono nerd font 9'         -- Glyphs don't work properly with this (#442)
-    theme.font_large = 'Product Sans Regular 11'
-    theme.icon_font = 'Product Sans Medium 10'          -- Fira mono patched version
+    theme.font_large = 'Google Sans Regular 11'
+    theme.icon_font = 'Google Sans Medium 10'          -- Fira mono patched version
     --theme.icon_font = 'firamono nerd font 11'          -- Fira mono patched version
 
     -- Layout icons

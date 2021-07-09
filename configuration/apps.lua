@@ -21,7 +21,7 @@ return {
         -- associated with each tag/workspace
         browser = 'env brave',
         editor = 'code', -- gui text editor
-        social = 'telegram-desktop',
+        social = 'schildichat-desktop',
         game = rofi_command,
         files = 'nautilus',
         music = 'clementine',
@@ -44,9 +44,9 @@ return {
         'xfce4-power-manager', -- Power manager
 	'pamac-tray',
         -- 'ibus-daemon --xim --daemonize', -- Ibus daemon for keyboard
-        'scream-start', -- scream audio sink
         -- 'flameshot', -- screenshots
         -- 'numlockx on', -- enable numlock
+	'syncthing -no-browser',
         '/usr/lib/xfce-polkit/xfce-polkit & eval $(gnome-keyring-daemon -s --components=pkcs11,secrets,ssh,gpg)', -- credential manager
         'blueman-tray', -- bluetooth tray
         --'copyq',
@@ -56,7 +56,6 @@ return {
 	--    '/usr/lib/policykit-1-gnome/polkit-gnome-authentication-agent-1 &")',
 	'keepassxc',
 	'kdeconnect-indicator',
-	'planner',
     }
 }
 
