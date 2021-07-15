@@ -1,3 +1,8 @@
+# This Project has moved to gitlab. See the link below.
+https://gitlab.com/thebiblelover7/awesome
+
+---
+
 # My AwesomeWM Config
 
 To clone:
